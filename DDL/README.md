@@ -73,109 +73,41 @@ This document provides an overview of Data Definition Language (DDL) commands in
 ## Usage
 These examples demonstrate the usage of DDL commands in SQL for defining, modifying, and managing the structure of a database. These commands are essential for database administrators and developers when working with database schema and objects.
 
-```
 
-
-
-
-
-
-Certainly! Below is an example of a README.md file formatted as notes with proper coding examples for each question and assignments related to them:
 
 ```markdown
-# Folder README
+
+# SQL DDL Assignment
 
 ## Overview
-This folder contains various assignments related to SQL queries and database management.
+This assignment focuses on practicing SQL Data Definition Language (DDL) commands for creating and modifying database objects.
 
-## Assignments
+## Assignment Details
 
 ### 1. Table Creation
-- **Task:** Create a table named `Students` with specific columns.
-- **SQL Code:**
-  ```sql
-  CREATE TABLE Students (
-      StudentID INT PRIMARY KEY,
-      FirstName VARCHAR(50),
-      LastName VARCHAR(50),
-      Age INT,
-      Grade VARCHAR(2)
-  );
-  ```
+- **Task:** Create a table named `Books` with the following columns:
+  - `BookID` (integer, primary key)
+  - `Title` (varchar, maximum length 100)
+  - `Author` (varchar, maximum length 50)
+  - `PublishedYear` (integer)
+- **Instructions:** Use the appropriate SQL syntax to create the table with the specified columns and data types.
 
 ### 2. Adding Column
-- **Task:** Add a column named `City` to the `Students` table.
-- **SQL Code:**
-  ```sql
-  ALTER TABLE Students
-  ADD COLUMN City VARCHAR(50);
-  ```
+- **Task:** Add a column named `Genre` (varchar, maximum length 50) to the `Books` table.
+- **Instructions:** Use the ALTER TABLE statement to add the new column to the existing table.
 
 ### 3. Table Modification
-- **Task:** Modify the `Grade` column in the `Students` table to allow a maximum length of 3 characters.
-- **SQL Code:**
-  ```sql
-  ALTER TABLE Students
-  MODIFY COLUMN Grade VARCHAR(3);
-  ```
+- **Task:** Modify the `PublishedYear` column in the `Books` table to allow NULL values.
+- **Instructions:** Alter the table structure to modify the column's properties accordingly.
 
 ### 4. Table Deletion
-- **Task:** Drop the `Students` table.
-- **SQL Code:**
-  ```sql
-  DROP TABLE Students;
-  ```
+- **Task:** Drop the `Books` table.
+- **Instructions:** Use the DROP TABLE statement to remove the table from the database.
 
-### 5. Table Renaming
-- **Task:** Rename the `Students` table to `Enrolled_Students`.
-- **SQL Code:**
-  ```sql
-  ALTER TABLE Students
-  RENAME TO Enrolled_Students;
-  ```
+## Submission Guidelines
+- Complete the assigned tasks using SQL queries.
+- Provide the SQL code for each task in a text file or directly within your submission.
+- Submit your solution by [INSERT SUBMISSION METHOD].
 
-### 6. Column Deletion
-- **Task:** Remove the `Age` column from the `Enrolled_Students` table.
-- **SQL Code:**
-  ```sql
-  ALTER TABLE Enrolled_Students
-  DROP COLUMN Age;
-  ```
-
-### 7. Table Commenting
-- **Task:** Add a comment to the `Enrolled_Students` table.
-- **SQL Code:**
-  ```sql
-  COMMENT ON TABLE Enrolled_Students
-  IS 'This table stores information about enrolled students';
-  ```
-
-### 8. Privilege Assignment
-- **Task:** Grant SELECT and INSERT privileges on the `Enrolled_Students` table to the user `enrollment_officer`.
-- **SQL Code:**
-  ```sql
-  GRANT SELECT, INSERT ON Enrolled_Students TO enrollment_officer;
-  ```
-
-### 9. Privilege Revocation
-- **Task:** Revoke INSERT privilege on the `Enrolled_Students` table from the user `enrollment_officer`.
-- **SQL Code:**
-  ```sql
-  REVOKE INSERT ON Enrolled_Students FROM enrollment_officer;
-  ```
-
-### 10. Index Creation
-- **Task:** Create an index named `idx_student_id` on the `StudentID` column of the `Enrolled_Students` table.
-- **SQL Code:**
-  ```sql
-  CREATE INDEX idx_student_id ON Enrolled_Students(StudentID);
-  ```
-
-## Usage
-These SQL commands can be executed in a database management system like MySQL, PostgreSQL, or SQLite to perform various data definition tasks.
-
-```
-
-
-
-This README.md file presents concise notes on each DDL command along with clear examples, making it a useful reference for anyone learning or working with SQL databases.
+## Note
+These assignments are designed to reinforce your understanding of SQL DDL commands and their practical applications in database management.
