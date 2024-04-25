@@ -75,7 +75,6 @@ These examples demonstrate the usage of DDL commands in SQL for defining, modify
 
 
 
-```markdown
 
 # SQL DDL Assignment
 
