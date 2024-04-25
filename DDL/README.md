@@ -1,5 +1,3 @@
-Certainly! Below is an example of a README.md file formatted as notes with examples for each Data Definition Language (DDL) command:
-
 ```markdown
 # DDL Notes
 
